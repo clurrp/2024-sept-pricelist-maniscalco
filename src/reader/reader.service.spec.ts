@@ -1,15 +1,15 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { CsvReaderService } from './csv-reader.service';
+import { ReaderService } from './reader.service';
 
-describe('CsvReaderService', () => {
-  let service: CsvReaderService;
+describe('ReaderService', () => {
+  let service: ReaderService;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [CsvReaderService],
+      providers: [ReaderService],
     }).compile();
 
-    service = module.get<CsvReaderService>(CsvReaderService);
+    service = module.get<ReaderService>(ReaderService);
   });
 
   it('should be defined', () => {
